@@ -8,7 +8,19 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+    let res = arr;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++){
+            if (i == j) {
+                continue
+            } else {
+                if (res[i] == arr[j]){
+                    arr.splice(j, 1);
+                }
+            }    
+        }
+    }
+    return arr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
