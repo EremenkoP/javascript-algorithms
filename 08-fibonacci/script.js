@@ -9,8 +9,13 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
-}
+    const counter = [ ,0, 1];
+    for (let i = 3; i <= n; i++) {
+        let element = counter[i-2] + counter[i-1];
+        counter.push(element);
+    }
+    return (counter[n]);
+} 
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

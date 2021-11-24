@@ -8,7 +8,18 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    arrRez = [];
+        for (i = 0; i < arr1.length; i++){
+            if (arr2.includes(arr1[i])) {
+                arrRez.push(arr1[i]);
+            };
+            for (j = 0; j<arrRez.length; j++) {
+                if ((arrRez[i] == arrRez[j]) && (i!==j)) {
+                    arrRez.splice(i, 1);
+                }
+            }
+        };
+    return arrRez;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
