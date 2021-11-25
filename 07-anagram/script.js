@@ -11,12 +11,8 @@
 function anagram(str1, str2) {
     str1 = str1.toLowerCase();
     str2 = str2.toLowerCase();
-    if (str1.length == str2.length) {
-        if (str1.split('').sort().join('') == str2.split('').sort().join('')) {
-            return true;
-        } else {
-            return false;
-        }
+    if (str1.length === str2.length) {
+        return (str1.split('').sort().join('') === str2.split('').sort().join('')) 
     } else {
         return false;
     }

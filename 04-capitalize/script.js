@@ -7,7 +7,7 @@
 */
 
 function capitalize(str) {
-    rez = str.toLowerCase().split(' ');
+    const rez = str.toLowerCase().split(' ');
     for (let i = 0; i < rez.length; i++) {
       rez[i] = rez[i].slice(0,1).toUpperCase() + rez[i].slice(1);
     }

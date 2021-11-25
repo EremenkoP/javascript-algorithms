@@ -8,13 +8,13 @@
 */
 
 function intersection(arr1, arr2) {
-    arrRez = [];
-        for (i = 0; i < arr1.length; i++){
+    const arrRez = [];
+        for (let i = 0; i < arr1.length; i++){
             if (arr2.includes(arr1[i])) {
                 arrRez.push(arr1[i]);
             };
-            for (j = 0; j<arrRez.length; j++) {
-                if ((arrRez[i] == arrRez[j]) && (i!==j)) {
+            for (let j = 0; j<arrRez.length; j++) {
+                if ((arrRez[i] === arrRez[j]) && (i!==j)) {
                     arrRez.splice(i, 1);
                 }
             }
